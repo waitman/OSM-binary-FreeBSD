@@ -12,6 +12,10 @@ modified by Waitman Gobble <ns@waitman.net> for use on FreeBSD systems.
 NOTE: install is hardcoded to /usr/local, if you wish to use an alternate 
 path then edit src/Makefile to your needs. The java version has been removed
 from this distribution.
+
+First: install http://protobuf.googlecode.com/
+(Older version of protobuf available in ports devel/profobuf)
+
 */
 
 To compile:
