@@ -1,0 +1,31 @@
+
+OSM PBF
+=======
+
+See http://wiki.openstreetmap.org/wiki/PBF_Format .
+
+C Version
+=========
+
+/*
+modified by Waitman Gobble <ns@waitman.net> for use on FreeBSD systems.
+NOTE: install is hardcoded to /usr/local, if you wish to use an alternate 
+path then edit src/Makefile to your needs. The java version has been removed
+from this distribution.
+*/
+
+To compile:
+  cd src
+  gmake
+
+To install:
+  cd src
+  gmake install
+
+To include in your program use:
+
+#include <osmpbf/osmpbf.h>
+
+and link with:
+    -lpthread -lz -lprotobuf-lite -losmpbf
+
